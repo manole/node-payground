@@ -1,3 +1,10 @@
 {
-  connection : "123"
+  "client": "pg",
+  "connection": {
+    "host": "localhost",
+    "port": "5432",
+    "user": "cafenea",
+    "password": "test",
+    "database": "cafenea"
+  }
 }

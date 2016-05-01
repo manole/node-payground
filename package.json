@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "jasmine-core": "^2.3.4",
+    "log4js": "^0.6.35",
+    "mongoose": "^4.4.14"
   }
 }
