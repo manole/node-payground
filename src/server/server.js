@@ -1,7 +1,8 @@
 'use strict';
 let logger = require('log4js'),
     express = require("express"),
-    productController = require('./controllers/product.ctrl.js');
+    productController = require('./controllers/product.ctrl.js'),
+    config = require("./config/app.config.json");
 
 let log = logger.getLogger(),
     app = express();
