@@ -16,5 +16,8 @@
     "knex": "^0.11.1",
     "log4js": "^0.6.35",
     "pg": "^4.5.5"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.0"
   }
 }

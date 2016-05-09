@@ -1,5 +1,5 @@
 'use strict';
-let knex = require("../database/db.js");
+let knex = require("../config/db.js");
 
 module.exports.findAll = () => {
     return knex("products").select();

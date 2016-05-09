@@ -1,6 +1,6 @@
 "use strict";
-let dbConfig = require('../config/db.config');
-let appConfig = require('../config/app.config');
+let dbConfig = require('db.config.json');
+let appConfig = require('app.config.json');
 let schema = require('./schema');
 let logger = require('log4js').getLogger();
 
