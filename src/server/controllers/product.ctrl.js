@@ -1,12 +1,12 @@
 'use strict';
 let logger = require('log4js'),
     express = require("express"),
-    products = require("../models/product.model.js"),
-    router = express.Router();
+    router = express.Router(),
+    Products = require("../models/product.model.js");
 
 router.get('/', (req, res) => {
-    products.findAll().then((users) => {
-        res.send(users);
+    Products.fetchAll().then((products)=> {
+        res.send(products);
     });
 });
 

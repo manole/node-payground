@@ -1,6 +1,6 @@
 'use strict';
-let knex = require("../config/db.js");
+let bookshelf = require("../config/db.connection.js");
 
-module.exports.findAll = () => {
-    return knex("products").select();
-};
+module.exports = bookshelf.Model.extend({
+    tableName: "products",
+});

@@ -1,8 +1,9 @@
 "use strict";
-let dbConfig = require('db.config.json');
-let appConfig = require('app.config.json');
-let schema = require('./schema');
+let dbConfig = require('./db.config.json');
+let appConfig = require('./app.config.json');
+let schema = require('./db.schema');
 let logger = require('log4js').getLogger();
+let bookshelf = require('bookshelf');
 
 // initialize knex client
 let knex = require('knex')(dbConfig);
@@ -19,5 +20,5 @@ if (appConfig.dbClean === true) {
     });
 }
 
-// export database provider
-module.exports = knex;
+// export bookshelf database provider
+module.exports = bookshelf(knex);
