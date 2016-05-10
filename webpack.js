@@ -9,7 +9,13 @@ module.exports = {
     module: {
         loaders: [
             {
-                exclude: 'node_modules',
+                include: /^src\/client/,
+                exclude: /'node_modules|server'/,
+                loader: 'babel',
+                query: {
+                    presets: ['es2015'],
+                    plugins: ["transform-decorators"]
+                }
             }
         ]
     },
